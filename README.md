@@ -38,32 +38,29 @@ GCP setup
     - no errors found upon initial database and table creation
 
 Initial schema with column headers only and no errors:
-![Picture2](cloud_db_mgmt_pooling_migrations/az/images/FirstDatabaseSchema_Creation_noerrors.png "Text to show on mouseover") 
+![Picture2](/az/images/FirstDatabaseSchema_Creation_noerrors.png "Text to show on mouseover") 
 
 -Used faker and random to populate table with data
     - errors found:
         1. initially unable to update fake data to  "connection.execute(f"INSERT INTO  " string not being recognized. Troubleshooted by creating fake data tables and converting/uploading to sql schemas
 
 Unable to Connect error:
-![Picture7](cloud_db_mgmt_pooling_migrations/az/images/Unabletoconnect_MySQL.png "Text to show on mouseover")
+![Picture7](/az/images/Unabletoconnect_MySQL.png "Text to show on mouseover")
 
 Database schema:
-![Picture5](cloud_db_mgmt_pooling_migrations/az/images/Table1_fakedata.png "Text to show on mouseover")
-![Picture6](cloud_db_mgmt_pooling_migrations/az/images/Table2_fakedata.png "Text to show on mouseover")
+![Picture5](/az/images/Table1_fakedata.png "Text to show on mouseover")
+![Picture6](/az/images/Table2_fakedata.png "Text to show on mouseover")
 
 ## 2b. Using MySQL Workbench to Generate ERD:
         1. Reverse engineer schema error, resulting in only one table being loaded onto the schema. Databases both are populated with fake data.
 
 Schema error
-![Picture4](cloud_db_mgmt_pooling_migrations/az/images/SCHEMA_error.png "Text to show on mouseover")
+![Picture4](/az/images/SCHEMA_error.png "Text to show on mouseover")
 
 Resulting schema
-![Picture3](cloud_db_mgmt_pooling_migrations/az/images/Resulting_Schema.png "Text to show on mouseover")
+![Picture3](/az/images/Resulting_Schema.png "Text to show on mouseover")
 
 ## 3. SQLAlchemy and Flask Integration:
         1. Flask application not loading due to missing connection from mysql. Tested mysql connection which is still active.
 
 ## 4. Database Migrations with Alembic:
-
-
-
