@@ -1,0 +1,9 @@
+python
+pandas
+flask 
+os
+dotenv 
+sqlalchemy
+sqlite3
+random
+faker

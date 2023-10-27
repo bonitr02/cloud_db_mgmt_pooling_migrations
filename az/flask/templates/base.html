@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Patients and Procedure Codes </title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white-200">
+
+    <header class="bg-green-600 text-white p-4">
+        <h1 class="text-2xl">Welcome to Patients and Procedure codes</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/mysqldata" class="hover:underline">Patients Table</a></li>
+                <li><a href="/mysqldata2" class="hover:underline">Diagnosis Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-4">
+
+        {% block content %}{% endblock %}
+
+    </main>
+
+    <footer class="bg-green-600 text-white p-4 mt-6">
+        <p>© 2023 Patients and Proceudre Codes Application. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
