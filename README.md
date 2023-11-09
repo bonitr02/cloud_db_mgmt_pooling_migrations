@@ -61,6 +61,7 @@ Resulting schema
 ![Picture3](/az/images/Resulting_Schema.png "Text to show on mouseover")
 
 ## 3. SQLAlchemy and Flask Integration:
-        1. Flask application not loading due to missing connection from mysql. Tested mysql connection which is still active.
+        1. Flask application able to load after removing extra folders
+![Picture_Flask](images/Flask_db_pooling.png "Text to show on mouseover")
 
 ## 4. Database Migrations with Alembic:

@@ -1,4 +1,3 @@
-#pip install sqlalchemy alembic mysql-connector-python pymysql
 #pip install python-dotenv
 #pip install pymysql
 # pip install sqlalchemy alembic mysql-connector-python
@@ -13,14 +12,14 @@ from faker import Faker
 from dotenv import load_dotenv
 from pandas import read_sql
 
-load_dotenv('cloud_db_mgmt_pooling_migrations/az/.env')
+load_dotenv('.env')
 
 Base = declarative_base()
 
 class Patient(Base):
     __tablename__ = 'patient_contact'
-
-    mrn = Column(Integer, primary_key=True) #randint
+#Added autoincrement
+    mrn = Column(Integer, primary_key=True, autoincrement=True) #randint
     first_name = Column(String(50), nullable=False) #faker
     last_name = Column(String(50), nullable=False) #faker
     patient_number = Column(String(15)) #faker

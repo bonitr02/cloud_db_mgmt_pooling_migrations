@@ -17,7 +17,7 @@ from flask import Flask, render_template
 import pandas as pd
 from sqlite3 import connect
 
-load_dotenv('cloud_db_mgmt_pooling_migrations/az/.env')  # Load environment variables from .env file
+load_dotenv('.env')  # Load environment variables from .env file
 
 # Database connection settings from environment variables
 DB_HOST = os.getenv("DB_HOST")
@@ -65,8 +65,8 @@ app = Flask(__name__)
 def index():
     return render_template('base.html')
 
-sqldb1 = df.to_html('/home/rianne_bonitto/cloud_db_mgmt_pooling_migrationsWS/cloud_db_mgmt_pooling_migrations/az/flask/templates/mysqldata.html')
-sqldb2 = df2.to_html('cloud_db_mgmt_pooling_migrations/az/flask/templates/mysqldata2.html')
+sqldb1 = df.to_html('mysqldata.html')
+sqldb2 = df2.to_html('mysqldata2.html')
 
 @app.route('/mysqldata')
 def mysqldata(sqldata=df):
