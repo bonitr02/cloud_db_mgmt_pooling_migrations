@@ -45,20 +45,20 @@ Initial schema with column headers only and no errors:
         1. initially unable to update fake data to  "connection.execute(f"INSERT INTO  " string not being recognized. Troubleshooted by creating fake data tables and converting/uploading to sql schemas
 
 Unable to Connect error:
-![Picture7](/az/images/Unabletoconnect_MySQL.png "Text to show on mouseover")
+![Picture7](images/Unabletoconnect_MySQL.png "Text to show on mouseover")
 
 Database schema:
-![Picture5](/az/images/Table1_fakedata.png "Text to show on mouseover")
-![Picture6](/az/images/Table2_fakedata.png "Text to show on mouseover")
+![Picture5](images/Table1_fakedata.png "Text to show on mouseover")
+![Picture6](images/Table2_fakedata.png "Text to show on mouseover")
 
 ## 2b. Using MySQL Workbench to Generate ERD:
         1. Reverse engineer schema error, resulting in only one table being loaded onto the schema. Databases both are populated with fake data.
 
 Schema error
-![Picture4](/az/images/SCHEMA_error.png "Text to show on mouseover")
+![Picture4](images/SCHEMA_error.png "Text to show on mouseover")
 
 Resulting schema
-![Picture3](/az/images/Resulting_Schema.png "Text to show on mouseover")
+![Picture3](images/Resulting_Schema.png "Text to show on mouseover")
 
 ## 3. SQLAlchemy and Flask Integration:
         1. Flask application able to load after removing extra folders
