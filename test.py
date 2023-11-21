@@ -14,18 +14,12 @@ load_dotenv('.env')
 fake = Faker()
 
 # Database connection settings from environment variables
-#DB_HOST = os.getenv("DB_HOST")
-#DB_DATABASE = os.getenv("DB_DATABASE")
-#DB_USERNAME = os.getenv("DB_USERNAME")
-#DB_PASSWORD = os.getenv("DB_PASSWORD")
-#DB_PORT = int(os.getenv("DB_PORT", 3306))
-#DB_CHARSET = os.getenv("DB_CHARSET", "utf8mb4")
-
-DB_HOST = 'rianne-hha504-migrations.mysql.database.azure.com'
-DB_DATABASE = 'riannemigrations2'
-DB_USERNAME = 'bonitr02'
-DB_PASSWORD = 'PinaColada01!'
-DB_PORT = '3306'
+DB_HOST = os.getenv("DB_HOST")
+DB_DATABASE = os.getenv("DB_DATABASE")
+DB_USERNAME = os.getenv("DB_USERNAME")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_PORT = int(os.getenv("DB_PORT", 3306))
+DB_CHARSET = os.getenv("DB_CHARSET", "utf8mb4")
 
 # Connect to the database
 connectionString = f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE}'
