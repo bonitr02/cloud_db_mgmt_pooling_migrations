@@ -18,8 +18,7 @@ Base = declarative_base()
 
 class Patient(Base):
     __tablename__ = 'patient_contact'
-#Added autoincrement
-    mrn = Column(Integer, primary_key=True, autoincrement=True) #randint
+    mrn = Column(Integer, primary_key=True) #randint
     first_name = Column(String(50), nullable=False) #faker
     last_name = Column(String(50), nullable=False) #faker
     patient_number = Column(String(15)) #faker
